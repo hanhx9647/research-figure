@@ -1,10 +1,18 @@
 # ResearchFigureGPT
 
-> **This skill has moved** into the multi-skill collection **Research Artifact Lab**:
-> `github.com/hanhx9647/research-artifact-skills` → `skills/research-figure/`.
-> This standalone repository is kept for history and receives bug fixes only.
+> **ResearchFigureGPT is the first standalone skill from Research Artifact Lab.**
+> The collection repository provides the ecosystem index; this repository contains the
+> complete, independently installable skill and its examples, scripts, and tests.
 
 ResearchFigureGPT is a confirmation-first workflow for turning scientific logic into editable PowerPoint figures for researchers who may not program.
+
+Install this skill directly with:
+
+```bash
+npx skills add hanhx9647/research-figure
+```
+
+The collection index is available at [`research-artifact-skills`](https://github.com/hanhx9647/research-artifact-skills).
 
 **AI Scientific Figure Architect** — a reusable workflow that converts scientific research logic into editable PowerPoint figures.
 
