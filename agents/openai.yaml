@@ -1,0 +1,4 @@
+interface:
+  display_name: ResearchFigureGPT
+  short_description: Create editable scientific workflow figures
+  default_prompt: Turn my scientific content or reference figure into an editable PowerPoint workflow. First confirm the logic, then generate the PPTX, source, previews, theme, and validation report.

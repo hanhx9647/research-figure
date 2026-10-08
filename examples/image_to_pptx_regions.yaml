@@ -1,0 +1,80 @@
+# 区域描述文件 —— 由人工（或人工审核后的 OCR 结果）填写。
+# 坐标为原图像素，与 image_to_pptx_input.png 一一对应。
+image: examples/image_to_pptx_input.png
+
+regions:
+  # ---- 可重建：标题 ----
+  - id: r1
+    type: rebuild
+    kind: title
+    bbox: [40, 20, 620, 70]
+    text: "肿瘤影像分析流程"
+    ocr_confidence: 0.99
+
+  # ---- 可重建：四个流程模块 ----
+  - id: r2
+    type: rebuild
+    kind: node
+    bbox: [50, 250, 300, 360]
+    text: "原始影像"
+    fill: "DDEBF7"
+    ocr_confidence: 0.98
+
+  - id: r3
+    type: rebuild
+    kind: node
+    bbox: [340, 250, 590, 360]
+    text: "图像预处理"
+    fill: "E2F0D9"
+    ocr_confidence: 0.98
+
+  - id: r4
+    type: rebuild
+    kind: node
+    bbox: [630, 250, 880, 360]
+    text: "特征提取"
+    fill: "FCE4D6"
+    ocr_confidence: 0.98
+
+  - id: r5
+    type: rebuild
+    kind: node
+    bbox: [920, 250, 1160, 360]
+    text: "分类输出"
+    fill: "FFE699"
+    ocr_confidence: 0.98
+
+  # ---- 可重建：三条箭头 ----
+  - id: r6
+    type: rebuild
+    kind: arrow
+    from: r2
+    to: r3
+
+  - id: r7
+    type: rebuild
+    kind: arrow
+    from: r3
+    to: r4
+
+  - id: r8
+    type: rebuild
+    kind: arrow
+    from: r4
+    to: r5
+
+  # ---- 必须嵌入：影像缩略图，重建会破坏保真度 ----
+  - id: r9
+    type: embed
+    kind: node
+    bbox: [50, 400, 300, 640]
+    reason: "示例影像（灰度图像数据），重建为形状会破坏科学保真度"
+
+  # ---- 可重建：图例 ----
+  - id: r10
+    type: rebuild
+    kind: legend
+    bbox: [900, 420, 1160, 500]
+    text: "图例：蓝=输入，黄=输出"
+    fill: "F8FAFC"
+    ocr_confidence: 0.95

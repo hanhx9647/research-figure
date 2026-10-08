@@ -1,0 +1,7 @@
+# Core
+python-pptx>=0.6.23
+Pillow>=10.0
+PyYAML>=6.0
+
+# Optional — PNG rasterisation for render_preview.py when LibreOffice is used
+# PyMuPDF>=1.24        # or: pypdfium2, or poppler-utils (pdftoppm)

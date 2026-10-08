@@ -1,0 +1,24 @@
+name: research-figure-default
+page:
+  width_in: 13.333
+  height_in: 7.5
+fonts:
+  latin: Aptos
+  cjk: Microsoft YaHei
+  fallback: Arial
+colors:
+  background: "FFFFFF"
+  text: "1F2937"
+  border: "64748B"
+  input: "DDEBF7"
+  process: "E2F0D9"
+  decision: "FCE4D6"
+  data: "E4DFEC"
+  output: "FFE699"
+  accent: "2F75B5"
+  connector: "475569"
+layout:
+  margin_in: 0.45
+  gap_in: 0.35
+  node_width_in: 2.1
+  node_height_in: 0.8

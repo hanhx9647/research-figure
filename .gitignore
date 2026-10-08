@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Generated output (keep the folder, not the files)
+output/*
+!output/.gitkeep
+
+# Previews
+*.pdf
+*.png
+!examples/image_to_pptx_input.png
+preview/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.tmp
